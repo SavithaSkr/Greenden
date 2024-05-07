@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .body {
+        font-size: large;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+      }
+      .header {
+        background-color: #02998e;
+        color: white;
+        padding: 5px;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .middle {
+        background-color: #9dbdc7;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .aside {
+        background-color: #58ae57;
+        padding: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .article {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #c98d3e;
+        height: 500px;
+      }
+      .article__1 {
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+      .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5px;
+        justify-content: baseline;
+        align-items: baseline;
+      }
+      .cols img {
+        height: 250px;
+        width: 250px;
+        padding: 5px;
+      }
+      .footer {
+        background-color: #02998e;
+        color: white;
+        padding: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <title>Grid Exercise</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="middle">
+        <div class="aside">Aside</div>
+        <!-- aritcle -->
+        <div class="article">
+          <div class="article__1">Article</div>
+          <div class="cols">
+            <img src="./images/1.jpg" alt="" />
+            <img src="./images/2.jpg" alt="" />
+            <img src="./images/3.jpg" alt="" />
+            <!-- <div>Col1</div>
+            <div>Col2</div>
+            <div>Col3</div> -->
+          </div>
+        </div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

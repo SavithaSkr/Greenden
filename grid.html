@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+      }
+      .header {
+        background-color: aquamarine;
+        padding: 5px;
+      }
+      .middle {
+        background-color: rgb(192, 192, 192);
+        padding: 5px;
+      }
+      .one {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      .main_container {
+        background-color: rgb(243, 196, 126);
+        height: 100px;
+        margin: 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .sidebar {
+        background-color: rgb(139, 139, 17);
+        margin: 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .twin {
+        background-color: orange;
+        height: 100px;
+        margin: 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        background-color: blueviolet;
+        padding: 5px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="middle">
+        <div class="one">
+          <div class="main_container">main container</div>
+          <div class="sidebar">side bar</div>
+        </div>
+        <div class="two">
+          <div class="twin">Twin</div>
+          <div class="twin">Twin</div>
+        </div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
